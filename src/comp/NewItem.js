@@ -1,6 +1,6 @@
 import React from "react";
 
-const NewsItem = (props) => {
+const NewItem = (props) => {
 
     let { title, description,imageUrl,brandname,price,location,date } = props;
 
@@ -40,4 +40,4 @@ const NewsItem = (props) => {
 
 }
 
-export default NewsItem;
+export default NewItem;

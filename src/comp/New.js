@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import NewsItem from "./NewsItem";
+import NewItem from "./NewItem";
 
-export class News extends Component {
+export class New extends Component {
   capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
@@ -23,7 +23,7 @@ export class News extends Component {
                   <div className="flex bg-black space-x-6  overflow-x-scroll ">
                     {item.list.map((elem) => {
                       return (
-                        <NewsItem
+                        <NewItem
                           key={elem.image}
                           title={elem.product_name}
                           description={elem.discription}
@@ -49,4 +49,4 @@ export class News extends Component {
   }
 }
 
-export default News;
+export default New;

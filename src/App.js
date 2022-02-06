@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./comp/Navbar";
 import React, { Component } from "react";
-import News from "./comp/News";
+import New from "./comp/New";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default class App extends Component {
@@ -95,7 +95,7 @@ export default class App extends Component {
 
           <Switch>
             <Route exact path="/">
-              <News new_test_arr={new_test_arr} />
+              <New new_test_arr={new_test_arr} />
             </Route>
           </Switch>
         </Router>
